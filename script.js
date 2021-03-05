@@ -12,7 +12,6 @@ function homepageQuotes() {
 		}
 	});
 }
-homepageQuotes();
 
 (function($) {
 	$(function() {
@@ -117,6 +116,7 @@ function latestVideos() {
 }
 
 $(document).ready(function() {
+	homepageQuotes();
 	popularTutorials();
 	latestVideos();
 })

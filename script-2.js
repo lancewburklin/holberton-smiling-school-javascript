@@ -12,4 +12,6 @@ function homepageQuotes() {
 		}
 	});
 }
-homepageQuotes();
+$(document).ready(function() {
+	homepageQuotes();
+})

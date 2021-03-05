@@ -29,7 +29,9 @@ function getResults() {
 		}
 	});
 }
-getResults();
+$(document).ready(function() {
+	getResults();
+});
 
 $(document).ready(function() {
 	$('#search-button').change(function() {
