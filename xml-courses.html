@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script rel="text/javascript" src="xml-script-3.js"></script>
+</head>
+<body>
+	<div class="hero-courses">
+		<header>
+			<nav class="pt-4 pb-md-5 navbar navbar-expand-md navbar-light">
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="d-flex flex-sm-column flex-md-row navbar-brand mx-auto ml-lg-5">
+					<img src="images/smile_off.png" alt="smile" class="smile-off mx-auto mr-lg-3">
+					<img src="images/logo.png" alt="logo" class="ml-auto mr-auto"></div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mr-md-5">
+						<li class="nav-item"><a class="nav-link text-center text-white" href="#">COURSES</a></li>
+						<li class="nav-item"><a class="nav-link text-center text-white" href="#">PRICING</a></li>
+						<li class="nav-item"><a class="nav-link text-center text-white" href="#">LOGIN</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<h1 class="d-none d-md-block text-weight-bold text-white course-head text-center">« Don’t cry because it’s over. <span class="text-purp">Smile</span> because it happened. »</h1>
+		<!-- SEARCH FILTERS -->
+		<div class="course-form d-flex justify-content-around flex-wrap">
+			<div class="">
+				<p class="text-white small">KEYWORDS</p>
+				<input type="text" name="search-form" id="search-button" placeholder="Search by keywords">
+			</div>
+			<div>
+				<p class="text-white small">TOPIC</p>
+				<select name="topic" id="topic">
+					<option value="all">All</option>
+					<option value="novice">Novice</option>
+					<option value="intermediate">Intermediate</option>
+					<option value="expert">Expert</option>
+				</select>
+			</div>
+			<div>
+				<p class="text-white small">SORT BY</p>
+				<select name="sortBy" id="sortBy">
+					<option value="most_popular">Most Popular</option>
+					<option value="most_recent">Most Recent</option>
+					<option value="most_viewed">Most Viewed</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- VIDEO RESULT SECTION -->
+	<div class="container course-con">
+		<div class="row justify-content-around" id="card-container">
+			<p class="col-12">Results</p>
+			<div class="loader quoteLoad"></div>
+		</div>
+	</div>
+</body>
+<footer class="pricing-footer">
+	<div class="d-flex align-items-center justify-content-around flex-wrap">
+		<div>
+			<img src="images/smile_off.png" alt="smile" class="footerImg">
+			<img src="images/logo.png" alt="logo" class="logoImg">
+		</div>
+		<div class="socials">
+			<span class="holberton_school-icon-ic_facebook"></span>
+			<span class="holberton_school-icon-ic_twitter"></span>
+			<span class="holberton_school-icon-ic_instagram"></span>
+		</div>
+	</div>
+	<p class="text-center text-white">©smileschool 2020</p>
+</footer>
+</html>
