@@ -517,3 +517,7 @@ td span {
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #F0EFE7;
 }
+
+#card-container .card-b-2 {
+	align-items: baseline;
+}
